@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Bathukamma Event registration</title>
+<style>
+body{
+font-family:Arial;
+background:#aed6f1;
+padding:300px;
+height:100vh;
+}
+.form-container{
+max-width:500px;
+background:#eaeded;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,0.1)
+}
+h2{
+color:#ea5c00;
+} 
+label{
+display:block;
+margin:15px 0 5px;
+}
+input,select{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:2px solid #ccc;
+border-radius:5px;
+}
+input[type="radio"],input[type="checkbox"]
+{ width:auto;
+margin-right:10px;
+}
+.gender-options{
+display:flex;
+gap:15px;
+margin-top:5px;
+}
+button{
+background-color:#85c1e9;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:20px;
+width:100%;}
+button:hover{
+background-color:#5dade2;
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+<h2 align="center">Bathukamma event registration</h2>
+<form action="#"method="POST">
+<label for="firstname">First name:</label>
+<input type="text" id="firstname" name="firstname" placeholder="firstname" required>
+<label for="lastname">Last name:</label>
+<input type="text" id="lastname" name="lastname" placeholder="lastname" required>
+<label for="phone">Phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="\d{10} placeholder="10-digit number" required>
+<label for="email">Email address:</label>
+<input type="email" id="email" name="email" required>
+<label>Gender:</label>
+<div class="gender-options">
+<label><input type="radio"name="gender"value="male" required>Male</label>
+<label><input type="radio"name="gender"value="female" required>Female</label>
+<label><input type="radio"name="gender"value="other" required>Other</label>
+</div>
+<label for="num people">Number of people Attending:</label>
+<input type="number" id="numpeople" name="num people" min="1" required>
+<label for="event">Event participating in:</label>
+<select id="event" name="event" required>
+<option value="">Select event type</option>
+<option value="crafting">crafting</option>
+<option value="Music&Dance">Music&Dance</option>
+<option value="food fest">food fest</option>
+<option value="preparing">making bathukamma</option>
+</select>
+<label for="timeslot">Time slot:</label>
+<label>
+<input type="checkbox" name="timing" required>
+10:00AM-1:00PM</label>
+<label>
+<input type="checkbox" name="timing" required>
+2:00PM-6:00PM</label>
+<button type="submit">Register Now</button>
+</form>
+</div>
+</body>
+</html>
+
+
+
